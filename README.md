@@ -15,13 +15,13 @@ where:
 
 ## Repository layout
 
-- `/home/runner/work/swarm/swarm/episteme/models.py` – core data models
-- `/home/runner/work/swarm/swarm/episteme/core.py` – epistemic rule engine
-- `/home/runner/work/swarm/swarm/episteme/memory.py` – SQLite-backed memory layer
-- `/home/runner/work/swarm/swarm/episteme/interface.py` – language/LLM adapter
-- `/home/runner/work/swarm/swarm/episteme/experience.py` – observation-to-revision loop
-- `/home/runner/work/swarm/swarm/tests/` – unit tests for all modules
-- `/home/runner/work/swarm/swarm/docs/adr/` – architectural decision records
+- `episteme/models.py` – core data models
+- `episteme/core.py` – epistemic rule engine
+- `episteme/memory.py` – SQLite-backed memory layer
+- `episteme/interface.py` – language/LLM adapter
+- `episteme/experience.py` – observation-to-revision loop
+- `tests/` – unit tests for all modules
+- `docs/adr/` – architectural decision records
 
 ## Architectural overview
 
@@ -50,7 +50,7 @@ The system is organized as five collaborating layers:
 ### Install
 
 ```bash
-cd /home/runner/work/swarm/swarm
+cd <repository-root>
 python -m pip install -e ".[dev]"
 ```
 
@@ -59,14 +59,14 @@ python -m pip install -e ".[dev]"
 Run tests:
 
 ```bash
-cd /home/runner/work/swarm/swarm
+cd <repository-root>
 python -m pytest
 ```
 
 Run lint checks:
 
 ```bash
-cd /home/runner/work/swarm/swarm
+cd <repository-root>
 ruff check .
 ```
 
@@ -74,4 +74,4 @@ ruff check .
 
 Design decisions are tracked in markdown under:
 
-- `/home/runner/work/swarm/swarm/docs/adr/README.md`
+- `docs/adr/README.md`
